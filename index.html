@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071a3d">
+<title>HR4 — Gestão Inteligente</title>
+<style>
+:root{--bg:#f3f6fb;--surface:#fff;--navy:#071a3d;--navy2:#0b2b5b;--blue:#087df5;--cyan:#21b8ff;--red:#e51b3e;--text:#10213d;--muted:#71819a;--line:#e5ebf3;--green:#18a56b;--shadow:0 8px 24px #10213d16}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text);padding-bottom:88px}
+.appbar{background:linear-gradient(135deg,var(--navy),#0b3470);color:#fff;padding:18px 18px 24px;border-radius:0 0 28px 28px;box-shadow:0 8px 22px #071a3d30;position:relative;overflow:hidden}.appbar:after{content:"";position:absolute;right:-50px;top:-65px;width:180px;height:180px;border:28px solid #ffffff10;border-radius:50%}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:1}.brand{display:flex;align-items:center;gap:10px}.brand img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:contain}.brand small{display:block;color:#bcd0ee;font-size:11px;margin-top:3px}.brand strong{font-size:20px}.top-actions{display:flex;gap:8px}.iconbtn{width:40px;height:40px;border:1px solid #ffffff2c;background:#ffffff12;color:#fff;border-radius:12px;font-size:18px}.hello{margin-top:20px;position:relative;z-index:1}.hello small{color:#c9d8ee}.hello h1{margin:4px 0 0;font-size:25px}.balance{margin-top:16px;background:linear-gradient(135deg,#0d55a7,#087df5);border:1px solid #53baff66;border-radius:20px;padding:17px;box-shadow:0 10px 25px #087df530;position:relative;z-index:1}.balance .label{font-size:12px;color:#d8edff}.balance-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.balance strong{font-size:30px;letter-spacing:.2px}.eye{background:#ffffff14;border:0;color:#fff;font-size:18px}.section{padding:18px 16px 0}.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.section-head h2{font-size:18px;margin:0}.section-head a{color:var(--blue);font-size:13px;text-decoration:none}.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.action{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 7px;min-height:86px;box-shadow:var(--shadow);color:var(--text)}.action .ico{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;margin:0 auto 7px;background:#eaf4ff;color:var(--blue);font-size:19px}.action:nth-child(2) .ico{background:#fff0f3;color:var(--red)}.action:nth-child(3) .ico{background:#eafaf3;color:var(--green)}.action:nth-child(4) .ico{background:#eef0ff;color:#5868db}.action b{font-size:11px;display:block}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.metric{background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:15px;box-shadow:var(--shadow)}.metric .muted{font-size:12px;color:var(--muted)}.metric strong{display:block;font-size:20px;margin-top:7px}.metric .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--blue);margin-right:6px}.metric.red .dot{background:var(--red)}.metric.green .dot{background:var(--green)}.list{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 15px;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.row-left{display:flex;align-items:center;gap:11px;min-width:0}.row-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#edf5ff;color:var(--blue);flex:0 0 auto}.row-title{font-weight:700;font-size:14px}.row-sub{font-size:11px;color:var(--muted);margin-top:3px}.value{font-weight:700;white-space:nowrap}.green{color:var(--green)}.red{color:var(--red)}.module{display:none}.module.active{display:block}.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow)}.primary{background:var(--blue);color:#fff;border:0;border-radius:12px;padding:11px 15px;font-weight:700}.danger{background:var(--red);color:#fff;border:0;border-radius:12px;padding:11px 15px;font-weight:700}input,select{width:100%;padding:11px;border:1px solid #dbe3ef;border-radius:10px;margin:5px 0 10px}label{font-size:12px;color:var(--muted)}table{width:100%;border-collapse:collapse}th,td{padding:9px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--blue)}.tag{display:inline-block;padding:5px 9px;border-radius:99px;background:#eaf4ff;color:var(--blue);font-size:11px}.empty{color:var(--muted);font-size:13px;padding:18px;text-align:center}.bottom{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);height:76px;display:grid;grid-template-columns:repeat(4,1fr);z-index:50;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -8px 25px #10213d14}.bottom button{border:0;background:transparent;color:#7a899e;font-size:10px}.bottom button.active{color:var(--blue);font-weight:700}.bottom .bi{font-size:20px;display:block;margin-bottom:3px}.more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.more-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;text-align:left;box-shadow:var(--shadow)}.more-item b{display:block;margin-top:8px}.notice{background:linear-gradient(135deg,#fff5f6,#fff);border:1px solid #ffd4dc;border-left:4px solid var(--red);border-radius:15px;padding:13px;margin-top:12px;font-size:12px;color:#5f2630}.back{border:0;background:transparent;color:var(--blue);padding:0;font-size:13px;margin-bottom:10px}
+@media(min-width:700px){.appbar{max-width:900px;margin:0 auto;border-radius:0 0 28px 28px}.section{max-width:900px;margin:auto}.bottom{left:50%;transform:translateX(-50%);max-width:900px;border-radius:18px 18px 0 0}.actions{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header class="appbar">
+  <div class="top">
+    <div class="brand"><img src="logo-hr4.png" alt="HR4"><div><strong>HR4</strong><small>Gestão inteligente para o seu negócio</small></div></div>
+    <div class="top-actions"><button class="iconbtn" onclick="alert('Notificações em breve')">🔔</button><button class="iconbtn" onclick="alert('Perfil em breve')">👤</button></div>
+  </div>
+  <div class="hello"><small>Bem-vindo</small><h1>Olá! 👋</h1></div>
+  <div class="balance"><div class="label">Saldo disponível</div><div class="balance-row"><strong id="dSaldo">R$ 0,00</strong><button class="eye" onclick="toggleBalance()">👁</button></div></div>
+</header>
+
+<main>
+<section id="home" class="module active">
+  <div class="section"><div class="section-head"><h2>Ações rápidas</h2><a href="#" onclick="openMore();return false">Ver tudo</a></div>
+    <div class="actions">
+      <button class="action" onclick="show('financeiro')"><span class="ico">💰</span><b>Financeiro</b></button>
+      <button class="action" onclick="show('vendas')"><span class="ico">🛒</span><b>Nova venda</b></button>
+      <button class="action" onclick="show('clientes')"><span class="ico">👥</span><b>Clientes</b></button>
+      <button class="action" onclick="show('produtos')"><span class="ico">📦</span><b>Produtos</b></button>
+    </div>
+  </div>
+  <div class="section"><div class="section-head"><h2>Resumo do negócio</h2></div><div class="cards">
+    <div class="metric green"><span class="muted"><span class="dot"></span>Receitas</span><strong id="rReceitas">R$ 0,00</strong></div>
+    <div class="metric red"><span class="muted"><span class="dot"></span>Despesas</span><strong id="rDespesas">R$ 0,00</strong></div>
+    <div class="metric"><span class="muted"><span class="dot"></span>Vendas</span><strong id="dVendas">0</strong></div>
+    <div class="metric"><span class="muted"><span class="dot"></span>Estoque</span><strong id="rEstoque">0</strong></div>
+  </div></div>
+  <div class="section"><div class="section-head"><h2>Movimentações recentes</h2><a href="#" onclick="show('financeiro');return false">Ver todas</a></div><div class="list" id="recentList"></div></div>
+  <div class="section"><div class="notice"><b>HR4 em modo demonstração</b><br>Os dados são salvos neste aparelho. A próxima etapa pode conectar o sistema ao PostgreSQL e à API.</div></div>
+</section>
+
+<section id="financeiro" class="module"><div class="section"><button class="back" onclick="show('home')">‹ Voltar</button><div class="section-head"><h2>Financeiro</h2><button class="primary" onclick="addFinance()">+ Lançamento</button></div><div class="list" id="finList"></div></div></section>
+<section id="clientes" class="module"><div class="section"><button class="back" onclick="show('home')">‹ Voltar</button><div class="section-head"><h2>Clientes</h2><button class="primary" onclick="addClient()">+ Cliente</button></div><div class="list" id="clientList"></div></div></section>
+<section id="produtos" class="module"><div class="section"><button class="back" onclick="show('home')">‹ Voltar</button><div class="section-head"><h2>Produtos e estoque</h2><button class="primary" onclick="addProduct()">+ Produto</button></div><div class="list" id="prodList"></div></div></section>
+<section id="vendas" class="module"><div class="section"><button class="back" onclick="show('home')">‹ Voltar</button><div class="section-head"><h2>Vendas</h2><button class="primary" onclick="addSale()">+ Registrar</button></div><div class="list" id="saleList"></div></div></section>
+<section id="more" class="module"><div class="section"><button class="back" onclick="show('home')">‹ Voltar</button><div class="section-head"><h2>Todos os módulos</h2></div><div class="more-grid">
+<button class="more-item" onclick="show('tarefas')">✅<b>Tarefas</b><small>Atividades e pendências</small></button>
+<button class="more-item" onclick="show('funcionarios')">👔<b>Funcionários</b><small>Equipe e cargos</small></button>
+<button class="more-item" onclick="show('relatorios')">📊<b>Relatórios</b><small>Indicadores do negócio</small></button>
+<button class="more-item" onclick="resetDemo()">♻️<b>Restaurar teste</b><small>Dados de demonstração</small></button>
+</div></div></section>
+<section id="tarefas" class="module"><div class="section"><button class="back" onclick="show('more')">‹ Voltar</button><div class="section-head"><h2>Tarefas</h2><button class="primary" onclick="addTask()">+ Tarefa</button></div><div class="list" id="taskList"></div></div></section>
+<section id="funcionarios" class="module"><div class="section"><button class="back" onclick="show('more')">‹ Voltar</button><div class="section-head"><h2>Funcionários</h2><button class="primary" onclick="addEmployee()">+ Funcionário</button></div><div class="list" id="empList"></div></div></section>
+<section id="relatorios" class="module"><div class="section"><button class="back" onclick="show('more')">‹ Voltar</button><div class="section-head"><h2>Relatórios</h2></div><div class="cards"><div class="metric green"><span class="muted">Receitas</span><strong id="rr">R$ 0,00</strong></div><div class="metric red"><span class="muted">Despesas</span><strong id="rd">R$ 0,00</strong></div><div class="metric"><span class="muted">Estoque</span><strong id="re">0</strong></div><div class="metric"><span class="muted">Clientes</span><strong id="rc">0</strong></div></div></div></section>
+</main>
+
+<nav class="bottom"><button id="navHome" class="active" onclick="show('home')"><span class="bi">⌂</span>Início</button><button id="navFin" onclick="show('financeiro')"><span class="bi">▣</span>Financeiro</button><button id="navSales" onclick="show('vendas')"><span class="bi">＋</span>Vendas</button><button id="navMore" onclick="show('more')"><span class="bi">☰</span>Mais</button></nav>
+
+<script>
+const K='hr4_demo_v1';
+let db=JSON.parse(localStorage.getItem(K)||'null')||{finance:[{desc:'Venda inicial',tipo:'entrada',valor:250}],clients:[{nome:'Cliente de teste',tel:'(00) 00000-0000'}],products:[{nome:'Produto A',preco:50,estoque:10}],sales:[],tasks:[{nome:'Conferir estoque',done:false}],employees:[{nome:'Funcionário teste',cargo:'Operador'}]};
+function save(){localStorage.setItem(K,JSON.stringify(db));render()}
+function br(v){return Number(v||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function show(id){document.querySelectorAll('.module').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.bottom button').forEach(x=>x.classList.remove('active'));if(id==='home')navHome.classList.add('active');else if(id==='financeiro')navFin.classList.add('active');else if(id==='vendas')navSales.classList.add('active');else if(id==='more'||['tarefas','funcionarios','relatorios'].includes(id))navMore.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});render()}
+function openMore(){show('more')}
+let hidden=false,lastBalance='';function toggleBalance(){hidden=!hidden;dSaldo.textContent=hidden?'••••••':lastBalance}
+function addFinance(){let desc=prompt('Descrição:');if(!desc)return;let v=Number(prompt('Valor:')||0);let tipo=confirm('OK = entrada | Cancelar = despesa')?'entrada':'saida';db.finance.push({desc,tipo,valor:v});save()}
+function addClient(){let nome=prompt('Nome do cliente:');if(nome){db.clients.push({nome,tel:prompt('Telefone:')||''});save()}}
+function addProduct(){let nome=prompt('Produto:');if(!nome)return;let preco=Number(prompt('Preço:')||0),estoque=Number(prompt('Estoque inicial:')||0);db.products.push({nome,preco,estoque});save()}
+function addSale(){if(!db.products.length)return alert('Cadastre um produto.');let p=db.products[0];if(p.estoque<1)return alert('Produto sem estoque.');p.estoque--;db.sales.push({produto:p.nome,valor:p.preco,data:new Date().toLocaleString('pt-BR')});db.finance.push({desc:'Venda - '+p.nome,tipo:'entrada',valor:p.preco});save()}
+function addTask(){let nome=prompt('Tarefa:');if(nome){db.tasks.push({nome,done:false});save()}}
+function addEmployee(){let nome=prompt('Nome:');if(nome){db.employees.push({nome,cargo:prompt('Cargo:')||''});save()}}
+function resetDemo(){if(confirm('Restaurar os dados de teste?')){localStorage.removeItem(K);location.reload()}}
+function render(){
+let ent=db.finance.filter(x=>x.tipo==='entrada').reduce((a,x)=>a+x.valor,0),sai=db.finance.filter(x=>x.tipo==='saida').reduce((a,x)=>a+x.valor,0);lastBalance=br(ent-sai);if(!hidden)dSaldo.textContent=lastBalance;dVendas.textContent=db.sales.length;rReceitas.textContent=br(ent);rDespesas.textContent=br(sai);rEstoque.textContent=db.products.reduce((a,x)=>a+Number(x.estoque),0);rr.textContent=br(ent);rd.textContent=br(sai);re.textContent=rEstoque.textContent;rc.textContent=db.clients.length;
+finList.innerHTML=db.finance.slice().reverse().map(x=>`<div class="row"><div class="row-left"><div class="row-icon">${x.tipo==='entrada'?'↓':'↑'}</div><div><div class="row-title">${x.desc}</div><div class="row-sub">${x.tipo==='entrada'?'Entrada':'Despesa'}</div></div></div><div class="value ${x.tipo==='entrada'?'green':'red'}">${x.tipo==='entrada'?'+':'-'} ${br(x.valor)}</div></div>`).join('')||'<div class="empty">Nenhum lançamento.</div>';
+clientList.innerHTML=db.clients.map(x=>`<div class="row"><div class="row-left"><div class="row-icon">👤</div><div><div class="row-title">${x.nome}</div><div class="row-sub">${x.tel||'Sem telefone'}</div></div></div><span class="tag">Cliente</span></div>`).join('')||'<div class="empty">Nenhum cliente.</div>';
+prodList.innerHTML=db.products.map(x=>`<div class="row"><div class="row-left"><div class="row-icon">📦</div><div><div class="row-title">${x.nome}</div><div class="row-sub">Estoque: ${x.estoque}</div></div></div><div class="value">${br(x.preco)}</div></div>`).join('')||'<div class="empty">Nenhum produto.</div>';
+saleList.innerHTML=db.sales.slice().reverse().map(x=>`<div class="row"><div class="row-left"><div class="row-icon">🛒</div><div><div class="row-title">${x.produto}</div><div class="row-sub">${x.data}</div></div></div><div class="value green">+ ${br(x.valor)}</div></div>`).join('')||'<div class="empty">Nenhuma venda.</div>';
+taskList.innerHTML=db.tasks.map((x,i)=>`<div class="row"><label><input style="width:auto" type="checkbox" ${x.done?'checked':''} onchange="db.tasks[${i}].done=this.checked;save()"> ${x.nome}</label></div>`).join('')||'<div class="empty">Nenhuma tarefa.</div>';
+empList.innerHTML=db.employees.map(x=>`<div class="row"><div class="row-left"><div class="row-icon">👔</div><div><div class="row-title">${x.nome}</div><div class="row-sub">${x.cargo}</div></div></div></div>`).join('')||'<div class="empty">Nenhum funcionário.</div>';
+recentList.innerHTML=db.finance.slice().reverse().slice(0,5).map(x=>`<div class="row"><div class="row-left"><div class="row-icon">${x.tipo==='entrada'?'↓':'↑'}</div><div><div class="row-title">${x.desc}</div><div class="row-sub">Movimentação financeira</div></div></div><div class="value ${x.tipo==='entrada'?'green':'red'}">${x.tipo==='entrada'?'+':'-'} ${br(x.valor)}</div></div>`).join('')||'<div class="empty">Nenhuma movimentação.</div>';
+}
+render();
+</script>
+</body>
+</html>
