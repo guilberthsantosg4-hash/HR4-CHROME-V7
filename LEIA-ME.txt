@@ -1,0 +1,6 @@
+# HR4 — Teste no Chrome
+
+1. Baixe `HR4_CHROME.html`.
+2. Abra o arquivo com o Google Chrome.
+3. O ambiente funciona localmente e salva os dados no armazenamento do Chrome.
+4. Este é um ambiente de demonstração; a versão completa do HR4 continua usando API + PostgreSQL.
